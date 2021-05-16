@@ -105,7 +105,7 @@ a {
   list-style: none;
 }
 
-.list--inline .list__item {
+.list--inline .list--item {
   display: inline-block;
   margin-right: 2rem;
 }
@@ -115,7 +115,7 @@ a {
   padding-left: 3rem;
 }
 
-.list--tickmark .list__item {
+.list--tickmark .list--item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -142,11 +142,11 @@ a {
   font-size: 1.5rem;
 }
 
-.card--primary .bagde--secondary {
+.card--primary .badge--primary {
   background: #126de4;
 }
 
-.card--secondary .bagde--secondary {
+.card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
@@ -183,7 +183,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 1rem;
+  margin: 1rem 0;
   outline: none;
   padding: 2rem 3rem;
   text-align: center;
@@ -279,8 +279,9 @@ a {
 
 /* Card */
 .card {
-  border-radius: 6px;
+  border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
 }
 
 .card--header,
@@ -296,4 +297,64 @@ a {
 .card--secondary .card--header {
   background: var(--color-secondary);
   color: white;
+}
+
+/* Plans */
+.plan--name {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.plan--price {
+  font-size: 6rem;
+}
+
+.plan--duration {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.plan--description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan .list--item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular .card--header {
+  position: relative;
+}
+
+.plan--popular .card--header::before {
+  content: url("../Icons/popular.svg");
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan--name {
+    font-size: 1.5rem;
+  }
+
+  .plan--price {
+    font-size: 5rem;
+  }
+
+  .plan--duration {
+    font-size: 1.6rem;
+  }
+
+  .plan--description {
+    font-size: 1.7rem;
+  }
 }
