@@ -362,6 +362,22 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
 .plan--popular .card--header {
   position: relative;
 }
@@ -460,6 +476,9 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+  }
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -721,4 +740,14 @@ a {
   .block--domain--price {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+}
+
+/* block plans */
+.block--plans .grid {
+  gap: 8rem 5rem;
+}
+
+.block--plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
