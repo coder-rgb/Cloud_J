@@ -111,3 +111,39 @@ a {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
+
+/* Badges */
+.badge {
+  border-radius: 20rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.bagde--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.5rem;
+}
+
+.card--primary .bagde--secondary {
+  background: #126de4;
+}
+
+.card--secondary .bagde--secondary {
+  background: #02cdf1;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.2rem;
+  }
+}
