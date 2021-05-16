@@ -104,6 +104,7 @@ a {
 
 .list {
   list-style: none;
+  padding-left: 0;
 }
 
 .list--inline .list--item {
@@ -576,7 +577,7 @@ a {
 
 .collapsible--icon {
   transform: rotate(-90deg);
-  transition: rotate 0.3s;
+  transition: transform 0.3s;
 }
 
 .collapsible--content {
@@ -810,5 +811,75 @@ a {
   .block--showcase--image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* footer */
+.footer {
+  background: #232323;
+}
+
+.footer--div {
+  padding: 2rem;
+  border-bottom: 1px solid #383838;
+}
+
+.footer--heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer--branding {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer--branding img {
+  width: 100%;
+}
+
+.footer--copyright {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.collapsible--content > .list a {
+  color: #777;
+}
+
+.collapsible--content > .list a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .footer--divs {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .footer .collapsible--icon {
+    display: none;
+  }
+
+  .footer .collapsible--content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer--branding {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer--div {
+    border-bottom: 0;
+  }
+
+  .footer--copyright {
+    font-size: 1.4rem;
+  }
+
+  .footer--heading {
+    font-size: 1.5rem;
   }
 }

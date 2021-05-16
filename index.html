@@ -10,41 +10,73 @@
 </head>
 
 <body>
-    <section class="block">
-        <header class="block--header">
-            <h2 class="block--heading">What our Customer are Saying</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, non!</p>
-        </header>
-        <div class="container">
-            <div class="card review--card">
-                <div class="grid grid--1x2">
-                    <div class="rc--image">
-                        <img src="img/testimonial.jpg" alt="Happy Customer">
-                        <span class="icon--container icon-container--accent">
-                            <svg class="icon icon--white icon--small">
-                                <use xlink:href="img/sprite.svg#quotes"></use>
-                            </svg>
-                        </span>
-                    </div>
-                    <blockquote class="quote">
-                        <p class="quote--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias consequuntur quam praesentium ab maxime quae, quasi iusto explicabo distinctio eveniet.</p>
-                        <footer>
-                            <div class="media">
-                                <div class="media--image">
-                                    <svg class="icon icon--primary">
-                                        <use xlink:href="img/sprite.svg#line"></use>
-                                    </svg>
-                                </div>
-                                <div class="media--body">
-                                    <h3 class="quote--author">Sonu Shah</h3>
-                                        <p class="quote--organization">Code Company</p>
-                                </div>
-                            </div>
-                       </footer>
-                    </blockquote>
+    <footer class="block block--dark footer">
+        <div class="container grid  footer--divs">
+            <div class="collapsible collapsible--expanded footer--div">
+                <header class="collapsible--header">
+                    <h2 class="collapsible--heading footer--heading">Products</h2>
+                    <svg class="icon icon--white collapsible--icon">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible--content">
+                    <ul class="list">
+                        <li><a href="#">Website Hosting</a></li>
+                        <li><a href="#">Free Automated Wordpress</a></li>
+                        <li><a href="#">Migrations</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="collapsible collapsible--expanded  footer--div">
+                <header class="collapsible--header">
+                    <h2 class="collapsible--heading footer--heading">Company</h2>
+                    <svg class="icon icon--white collapsible--icon">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible--content">
+                    <ul class="list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapsible collapsible--expanded footer--div">
+                <header class="collapsible--header">
+                    <h2 class="collapsible--heading footer--heading">Support</h2>
+                    <svg class="icon icon--white collapsible--icon">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible--content">
+                    <ul class="list">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapsible collapsible--expanded footer--div">
+                <header class="collapsible--header">
+                    <h2 class="collapsible--heading footer--heading">Domains</h2>
+                    <svg class="icon icon--white collapsible--icon">
+                        <use xlink:href="img/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <div class="collapsible--content">
+                    <ul class="list">
+                        <li><a href="#">Domain Checker</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Free Domain</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="footer--branding">
+                <img src="img/logo.png" alt="logo">
+                <p class="footer--copyright">Copyright 2021 Code J</p>
+            </section>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
