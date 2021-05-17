@@ -549,6 +549,10 @@ a {
   text-align: center;
 }
 
+.callout--signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 1024px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
@@ -721,7 +725,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 20rem;
+    padding: 10rem;
   }
 
   .hero--content {
