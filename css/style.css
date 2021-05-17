@@ -199,7 +199,6 @@ a {
   font-weight: bold;
   margin: 1rem 0;
   outline: none;
-  padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -478,9 +477,6 @@ a {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
-  .grid--1x3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 /* review */
@@ -744,8 +740,8 @@ a {
 
 .block--domain--price {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
@@ -886,4 +882,20 @@ a {
   .footer--heading {
     font-size: 1.5rem;
   }
+}
+
+/* troubleshooting */
+/*moto ni nav vala issue mate */
+.nav > a {
+  width: 170px;
+}
+/* because popular tag uper chdi jay 6e price ni */
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* btn is too big for small device */
+.btn {
+  padding: 2rem 4vw;
 }
